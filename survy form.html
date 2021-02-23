@@ -1,0 +1,124 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+  <body>
+    <h1 id="title">What do you think about Shopping Online?</h1>
+    <p id="description">
+      In those days when all the stores are close we only have the stores
+      online.<br />
+      We want to make it easier and more convenient for you!
+    </p>
+
+    <br /><br />
+    <div>
+      <br />
+      <form id="survey-form">
+        <label id="name-label" for="name">Name:</label><br />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+        <br /><br />
+
+        <label id="email-label" for="email">Email:</label><br />
+        <input
+          type="email"
+          name="name"
+          id="email"
+          placeholder="Enter your Email"
+          required
+        />
+        <br /><br />
+        <label id="number-label" for="number">Age: </label><br />
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="18"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+        <br /><br />
+
+        <label for="options">How do you describe your current role?</label
+        ><br /><br />
+        <select id="dropdown" name="role" required>
+          <option disabled selected value>Select current role</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="student">Student</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option></select
+        ><br /><br />
+
+        <label for="radio">
+          How do you define your online shopping routine?</label
+        ><br />
+        <input type="radio" id="everyday" name="routine" value="everyday" />
+        <label for="radio">Everyday </label><br />
+        <input type="radio" id="sometimes" name="routine" value="sometimes" />
+        <label for="radio">Sometimes </label><br />
+        <input type="radio" id="never" name="routine" value="never" />
+        <label for="radio">Never </label><br /><br />
+
+        <label for="check"> What things do you love to buy online?</label><br />
+        <input type="checkbox" name="buy" value="home" />
+        <label for="check">Home </label><br />
+        <input type="checkbox" name="buy" value="clothes" />
+        <label for="check">Clothes </label><br />
+        <input type="checkbox" name="buy" value="shoes" />
+        <label for="check">Shoes </label><br />
+        <input type="checkbox" name="buy" value="electronics" />
+        <label for="check">Electronics </label><br />
+        <input type="checkbox" name="buy" value="more" />
+        <label for="check">More </label><br /><br />
+
+        <label for="comments"
+          >Suggestions for improving your shopping experience?</label
+        ><br /><br />
+        <textarea id="comments" placeholder="Enter your comment here...">
+        </textarea>
+        <br /><br />
+
+        <input type="submit" id="submit" value="Submit" /><br /><br />
+      </form>
+    </div>
+  </body>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      color: black;
+      text-align: center;
+      margin-right: 100px;
+      margin-left: 100px;
+
+      background-image: url("10-online-shopping-habits-iStock-1135609382.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    * {
+      text-align: center;
+    }
+
+    div {
+      background-color: white;
+      color: black;
+      margin-right: 50px;
+      margin-left: 1000px;
+    }
+  </style>
+</html>
